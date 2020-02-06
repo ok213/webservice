@@ -1,0 +1,7 @@
+curl -X POST http://localhost:8081/ -H 'cache-control: no-cache' -H 'content-type: text/xml' \
+-d '<?xml version="1.0" encoding="utf-8" ?><request><request-type>CREATE-AGT</request-type> \
+<extra name="login">777777</extra><extra name="password">test777</extra></request>'
+
+curl -X POST http://localhost:8081/ -H 'cache-control: no-cache' -H 'content-type: text/xml' \
+-d '<?xml version="1.0" encoding="utf-8" ?><request><request-type>GET-BALANCE</request-type> \
+<extra name="login">222222</extra><extra name="password">pwd2</extra></request>'
